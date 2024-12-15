@@ -54,9 +54,29 @@ body {
 }
 
 .small-icon {
-    width: 1rem;
+    width: 1.5rem;
     fill: white;
 }
+
+.small-icon-black {
+    width: 1.5rem;
+}
+
+.small-profile-pic {
+    width: 3rem;
+}
+
+.top-header {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 15px;
+ }
+
+ input {
+    margin-right: auto;
+    width: 50%;
+ }
 
 .content-area {
     display: grid;
