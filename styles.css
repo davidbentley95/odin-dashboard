@@ -17,7 +17,7 @@ body {
 
 .main-grid {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 }
 
@@ -27,9 +27,50 @@ body {
     color: white;
 }
 
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.sidebar-item:nth-child(1),
+.sidebar-item:nth-child(7) {
+    margin-bottom: 2rem;
+}
+
+.sidebar-item:hover {
+    cursor: pointer;
+}
+
+.large-icon {
+    width: 3rem;
+    fill: white;
+}
+
+.med-icon {
+    width: 2rem;
+    fill: white;
+}
+
+.small-icon {
+    width: 1rem;
+    fill: white;
+}
+
 .content-area {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
+    grid-column: 1 / 3;
+}
+
+.projects > h3 {
+    grid-column: 1 / -1;
 }
