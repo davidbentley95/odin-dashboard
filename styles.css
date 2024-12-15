@@ -66,16 +66,54 @@ body {
     width: 3rem;
 }
 
+.large-profile-pic {
+    width: 4rem;
+}
+
 .top-header {
     display: flex;
     padding: 20px;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+ }
+
+ .top-header h3 {
+    margin-right: 3rem;
  }
 
  input {
     margin-right: auto;
     width: 50%;
+    border-radius: 20px;
+    height: 30px;
+    border: none;
+    background-color: #E2E8F0
+ }
+
+ .bottom-header {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    gap: 20px;
+ }
+
+ button:first-of-type {
+    margin-left: auto;
+}
+
+ button {
+    background-color: var(--primary-clr);
+    color: white;
+    width: 6rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600
+ }
+
+ button:hover {
+    cursor: pointer;
  }
 
 .content-area {
@@ -83,6 +121,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
+    background-color: var(--light-grey);
 }
 
 .projects {
@@ -93,4 +132,18 @@ body {
 
 .projects > h3 {
     grid-column: 1 / -1;
+}
+
+.project-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.trending-card > div {
+    display: flex;
+    padding: 10px;
+}
+
+.trending-card, .card, .announcements>div {
+    background-color: white;
 }
