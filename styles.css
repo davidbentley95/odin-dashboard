@@ -18,7 +18,7 @@ body {
 
 .main-grid {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 6fr;
 }
 
@@ -93,7 +93,7 @@ body {
 
  .bottom-header {
     display: flex;
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
     align-items: center;
     gap: 20px;
  }
@@ -123,7 +123,7 @@ body {
     grid-template-rows: 1fr 1fr;
     background-color: var(--light-grey);
     gap: 15px;
-    padding: 15px;
+    padding: 30px;
 }
 
 .projects {
@@ -135,12 +135,17 @@ body {
 }
 
 .projects > h3 {
-    grid-column: 1 / -1;
+    grid-column: 1 / -1;    
+}
+
+.project-icons {
+    gap: 20px;
 }
 
 .announcements {
     grid-column: 3;
     grid-row: 1 / 2;
+    align-self: center;
 }
 
 .announcements p {
@@ -160,11 +165,14 @@ hr {
     grid-column: 3;
     grid-row: 2 / 3;
     border-radius: 20px;
+    align-self: center;
 }
 
 .project-icons {
     display: flex;
     justify-content: flex-end;
+    margin-top: auto;
+    
 }
 
 .trending-card > div {
@@ -186,6 +194,12 @@ hr {
     padding: 30px;
     border-left-color: var(--secondary-clr);
     border-left-width: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-area h3 {
+    padding-bottom: 15px;
 }
 
 
