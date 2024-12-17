@@ -163,7 +163,8 @@ hr {
     margin: 15px 0px;
 }
 
-.announcement-card {
+.announcement-card,
+.attribution-card {
     padding: 30px;
 }
 
@@ -194,7 +195,10 @@ hr {
     margin-right: 15px;
 }
 
-.trending-card, .card, .announcement-card {
+.trending-card, 
+.card, 
+.announcement-card,
+.attribution-card {
     background-color: white;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.19);
@@ -223,6 +227,5 @@ hr {
 
 .announcement-trending-div {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-
+    grid-template-rows: 3fr 3fr 1fr;
 }
