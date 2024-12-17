@@ -42,6 +42,7 @@ body {
 
 .sidebar-item:hover {
     cursor: pointer;
+    background-color: var(--secondary-clr);
 }
 
 .large-icon {
@@ -70,6 +71,12 @@ body {
 .large-profile-pic {
     width: 4rem;
 }
+
+.small-icon:hover, 
+.small-icon-black:hover {
+    fill: var(--secondary-clr);
+}
+
 
 .top-header {
     display: flex;
@@ -115,12 +122,16 @@ body {
 
  button:hover {
     cursor: pointer;
+    background-color: var(--secondary-clr);
+ }
+
+ button:active {
+    opacity: .75;
  }
 
 .content-area {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 2.5fr 1fr;
     background-color: var(--light-grey);
     gap: 15px;
     padding: 30px;
@@ -129,12 +140,13 @@ body {
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
     gap: 15px;
 }
 
 .projects > h3 {
     grid-column: 1 / -1;
+    margin-bottom: -15px;
 }
 
 .project-icons {
@@ -153,6 +165,12 @@ hr {
 
 .announcement-card {
     padding: 30px;
+}
+
+.announcement-card h4:hover,
+.announcement-card p:hover,
+.trending-card div:hover {
+    cursor: pointer;
 }
 
 .trending {
@@ -176,9 +194,10 @@ hr {
     margin-right: 15px;
 }
 
-.trending-card, .card, .announcements>div {
+.trending-card, .card, .announcement-card {
     background-color: white;
     border-radius: 15px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.19);
 }
 
 .card {
@@ -187,10 +206,23 @@ hr {
     border-left-width: 2px;
     display: flex;
     flex-direction: column;
+    border-left: 10px solid var(--secondary-clr);
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.projects:hover > div:not(:hover) {
+    opacity: 0.5;
 }
 
 .content-area h3 {
     padding-bottom: 15px;
 }
 
+.announcement-trending-div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 
+}
